@@ -1,0 +1,355 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMW M4 Competition - Elite Motors</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background:
+                radial-gradient(
+                    circle at 15% 10%,
+                    rgba(212, 175, 55, 0.07),
+                    transparent 30%
+                ),
+                #080808;
+            color: white;
+        }
+
+        header {
+            padding: 22px 7%;
+            background: rgba(10, 10, 10, 0.92);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #d4af37;
+        }
+
+        .container {
+            width: 86%;
+            max-width: 1200px;
+            margin: 50px auto;
+            animation: showPage 0.8s ease;
+        }
+
+        @keyframes showPage {
+
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        .main-image {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            display: block;
+            border-radius: 20px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 15px;
+            border: 1px solid #242424;
+            background: #111;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+            transition: 0.45s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.07);
+        }
+
+        h1 {
+            font-size: 46px;
+            margin-top: 40px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #999;
+            font-size: 18px;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .spec {
+            background: linear-gradient(145deg, #151515, #0e0e0e);
+            border: 1px solid #242424;
+            border-radius: 13px;
+            padding: 22px;
+            transition: 0.3s;
+        }
+
+        .spec:hover {
+            transform: translateY(-4px);
+            border-color: #d4af37;
+        }
+
+        .spec strong {
+            display: block;
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+
+        .spec span {
+            color: #eee;
+        }
+
+        .note {
+            margin-top: 30px;
+            color: #777;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .gold {
+            background: linear-gradient(135deg, #d4af37, #f0d36a);
+            color: #080808;
+        }
+
+        .dark {
+            background: #1a1a1a;
+            color: white;
+            border: 1px solid #333;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+        }
+
+        @media (max-width: 900px) {
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            .specs {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .main-image {
+                height: 330px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        ELITE <span>MOTORS</span>
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <img
+        class="main-image"
+        src="https://i.bstr.es/highmotor/2024/02/BMW-M4-Competition-2024-23.jpg"
+        alt="BMW M4 Competition"
+    >
+
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+
+            <img
+                src="https://carjager-dev.mo.cloudinary.net/images/production/CJVGT0611251814OEK-exteriors-tqT1QKHRx8tsJHP_YuAyw-m4?tx=f_auto%2Cq_auto%2Cw_1920"
+                alt="BMW M4"
+            >
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0c/The_rearview_of_BMW_M4_Competition_Coup%C3%A9_%28G82%29_with_M_performance_parts.jpg"
+                alt="BMW M4"
+            >
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://dealersolutions.b-cdn.net/20250613/cdc630c1b2c30d4e3f60e423ab41cdcb.jpg"
+                alt="BMW M4 Interior"
+            >
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        BMW M4 Competition xDrive
+    </h1>
+
+    <div class="subtitle">
+        BMW M4 Competition Coupé — M xDrive
+    </div>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>المحرك</strong>
+            <span>3.0 لتر TwinPower Turbo — 6 سلندر خطي</span>
+        </div>
+
+        <div class="spec">
+            <strong>القوة</strong>
+            <span>530 حصان</span>
+        </div>
+
+        <div class="spec">
+            <strong>العزم</strong>
+            <span>650 نيوتن متر</span>
+        </div>
+
+        <div class="spec">
+            <strong>ناقل الحركة</strong>
+            <span>8 سرعات M Steptronic</span>
+        </div>
+
+        <div class="spec">
+            <strong>نظام الدفع</strong>
+            <span>M xDrive دفع رباعي</span>
+        </div>
+
+        <div class="spec">
+            <strong>0 - 100 كم/س</strong>
+            <span>3.5 ثانية</span>
+        </div>
+
+        <div class="spec">
+            <strong>نوع الهيكل</strong>
+            <span>Coupe — بابان</span>
+        </div>
+
+        <div class="spec">
+            <strong>المقاعد</strong>
+            <span>4 مقاعد</span>
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        مواصفات الأداء تخص BMW M4 Competition xDrive.
+        الكيلومترات والسعر يعتمدان على السيارة الفعلية المعروضة.
+    </div>
+
+
+    <div class="buttons">
+
+        <a
+            href="index.html"
+            class="btn gold"
+        >
+            العودة للمعرض
+        </a>
+
+        <a
+            href="#"
+            class="btn dark"
+        >
+            تواصل معنا
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+```

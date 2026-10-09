@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audi RS7 Sportback | Elite Motors</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: #fff;
+        }
+
+        header {
+            background: #050505;
+            border-bottom: 1px solid #d4af37;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            background: #f0ca4f;
+        }
+
+        .car-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .car-title h1 {
+            color: #d4af37;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .car-title p {
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        .gallery {
+            background: #111;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            margin-bottom: 40px;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .thumbnails {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .thumbnails img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid #222;
+            transition: 0.3s;
+        }
+
+        .thumbnails img:hover {
+            transform: scale(1.03);
+            border-color: #d4af37;
+        }
+
+        .section-title {
+            color: #d4af37;
+            font-size: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .spec-card {
+            background: #111;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #252525;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .spec-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .spec-card h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .spec-card p {
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, #111, #171717);
+            border: 1px solid #d4af37;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .price-box h2 {
+            color: #d4af37;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #f0ca4f;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #050505;
+            border-top: 1px solid #222;
+            color: #999;
+            margin-top: 50px;
+        }
+
+        footer span {
+            color: #d4af37;
+        }
+
+        @media (max-width: 900px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .main-image {
+                height: 380px;
+            }
+
+            .specs {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 94%;
+                margin: 30px auto;
+            }
+
+            .car-title h1 {
+                font-size: 30px;
+            }
+
+            .car-title p {
+                font-size: 15px;
+            }
+
+            .main-image {
+                height: 260px;
+            }
+
+            .thumbnails {
+                grid-template-columns: 1fr;
+            }
+
+            .thumbnails img {
+                height: 200px;
+            }
+
+            .specs {
+                grid-template-columns: 1fr;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Elite Motors</div>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="index.html#cars">السيارات</a>
+            <a href="#specifications">المواصفات</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <a href="index.html" class="back-btn">
+            ← العودة للمعرض
+        </a>
+
+
+        <div class="car-title">
+            <h1>Audi RS7 Sportback Performance</h1>
+            <p>أداء رياضي فاخر يجمع بين القوة والفخامة</p>
+        </div>
+
+
+        <div class="gallery">
+
+            <!-- الصورة الرئيسية -->
+            <img
+                id="mainImage"
+                class="main-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Audi_RS7_Sportback_%2848781449811%29.jpg"
+                alt="Audi RS7 Sportback"
+            >
+
+
+            <div class="thumbnails">
+
+                <!-- الصورة الجانبية -->
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/84/Audi_RS7_Sportback_%2855050253434%29.jpg"
+                    alt="Audi RS7 Side"
+                    onclick="changeImage(this.src)"
+                >
+
+
+                <!-- الصورة الخلفية -->
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/52/Audi_RS7_rear_view%2C_November_12%2C_2024.jpg"
+                    alt="Audi RS7 Rear"
+                    onclick="changeImage(this.src)"
+                >
+
+
+                <!-- الصورة الداخلية -->
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/69/Audi_S7_Sportback_interior.jpg"
+                    alt="Audi Interior"
+                    onclick="changeImage(this.src)"
+                >
+
+            </div>
+
+        </div>
+
+
+        <section id="specifications">
+
+            <h2 class="section-title">
+                مواصفات Audi RS7
+            </h2>
+
+
+            <div class="specs">
+
+                <div class="spec-card">
+                    <h3>المحرك</h3>
+                    <p>4.0L V8 TFSI Biturbo</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>القوة</h3>
+                    <p>630 حصان</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>العزم</h3>
+                    <p>850 نيوتن متر</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>نظام الدفع</h3>
+                    <p>quattro AWD</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>ناقل الحركة</h3>
+                    <p>8-Speed Tiptronic</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>0 - 100 كم/س</h3>
+                    <p>3.4 ثانية</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>السرعة القصوى</h3>
+                    <p>280 كم/س</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>نوع السيارة</h3>
+                    <p>Sportback Performance</p>
+                </div>
+
+
+                <div class="spec-card">
+                    <h3>الحالة</h3>
+                    <p>استفسر معنا</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="price-box">
+
+            <h2>السعر المرجعي</h2>
+
+            <div class="price">
+                6,283,200 جنيه
+            </div>
+
+            <a
+                href="https://wa.me/201220592641?text=السلام%20عليكم،%20عايز%20استفسر%20عن%20Audi%20RS7"
+                class="contact-btn"
+                target="_blank"
+            >
+                تواصل معنا
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <footer id="contact">
+        © 2026 <span>Elite Motors</span> - جميع الحقوق محفوظة
+    </footer>
+
+
+    <script>
+
+        function changeImage(imageUrl) {
+            document.getElementById("mainImage").src = imageUrl;
+        }
+
+    </script>
+
+</body>
+</html>
